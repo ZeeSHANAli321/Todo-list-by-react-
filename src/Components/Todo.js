@@ -107,11 +107,11 @@ export default function Todo(props) {
                 let myId="todo"+props.todo.s;
                 if((document.getElementById(myId).classList.contains="animate__fadeInDownBig")){
                   document.getElementById(myId).classList.remove("animate__fadeInDownBig");
-                  document.getElementById(myId).classList.add("animate__hinge");
+                  document.getElementById(myId).classList.add("animate__flipOutX");
                 }
                 setTimeout(() => {
                   props.onComplete()
-                }, 1800);
+                }, 500);
               }}>
                 DONE <FontAwesomeIcon icon="fa-solid fa-check" size="lg" style={{color: "#46fe39",}} />
               </button>     
