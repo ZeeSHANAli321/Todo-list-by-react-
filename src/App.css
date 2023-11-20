@@ -48,7 +48,13 @@ textarea {
     grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+
     
+    
+}
+
+hr{
+  color: var(--c-text);
 }
 @media (max-width: 575.98px) {
   .todoContainer{
@@ -59,6 +65,9 @@ textarea {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
    justify-items: center;
+
+   max-height: 68vh;
+    overflow: auto;
 }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
