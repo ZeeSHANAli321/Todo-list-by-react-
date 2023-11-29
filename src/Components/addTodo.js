@@ -27,7 +27,7 @@ export default function AddTodo({addTodo,showForm,setShowForm}) {
 
                 <div className="mb-3">
                     <label htmlFor="todoDisc" className="form-label">Description</label>
-                    <input required type="text" value={disc} onChange={(e)=>{setDisc(e.target.value)}} className="form-control" id="todoDisc"/>
+                    <textarea required type="text" value={disc} onChange={(e)=>{setDisc(e.target.value)}} className="form-control" id="todoDisc"/>
                 </div>
               
                 <button type="submit" className="btn btn-success" >Add Todo</button>
